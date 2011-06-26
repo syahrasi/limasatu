@@ -6,6 +6,9 @@
         preload: true,
         generateNextPrev: true
       }); 
+      $('.carousel').jcarousel({
+        wrap: 'circular'
+      })
     }
   };
 })(jQuery);

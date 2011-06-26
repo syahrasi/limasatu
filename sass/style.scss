@@ -486,6 +486,10 @@ h1#site-name {
   margin-top: 40px;
   margin-bottom: 40px; }
 
+.featured #main {
+  margin-top: 20px;
+}
+
 /* ----------------- Featured ----------------- */
 
 #featured {
@@ -1570,38 +1574,48 @@ div {
     &:hover .next {
       display: block;
     }
+    .pagination {
+      list-style-type: none;
+      margin:0;
+      padding:0;
+      text-align:center;
+      float: left;
+      position: absolute;
+      bottom: -40px;
+      z-index: 1000;
+      width: 100%;
+    }
+
+    .pagination li {
+      display: inline;
+      margin: 6px;
+      height: 12px;
+    }
+
+    .pagination li a {
+      display: inline-block;
+      margin: 0;       
+      width: 12px;
+      height: 0;
+      padding-top: 12px;
+      background-image:url(../images/pagination.png);
+      background-position: 0 0;
+      overflow: hidden;
+    }
+
+    .pagination li.current a {
+      background-position: 0 -12px;
+    }
   }
 }
 
-.pagination {
-  list-style-type: none;
-  margin:0;
-  padding:0;
-  text-align:center;
-  float: left;
-  position: absolute;
-  bottom: -40px;
-  z-index: 1000;
-  width: 100%;
-}
 
-.pagination li {
-  display: inline;
-  margin: 6px;
-  height: 12px;
-}
 
-.pagination li a {
-  display: inline-block;
-  margin: 0;       
-  width: 12px;
-  height: 0;
-  padding-top: 12px;
-  background-image:url(../images/pagination.png);
-	background-position: 0 0;
-  overflow: hidden;
-}
+/* ---------- Carousel ----------- */
 
-.pagination li.current a {
-  background-position: 0 -12px;
+.jcarousel-container {
+  margin: 0 25px 20px;
+  .jcarousel-item {
+    margin: 5px;
+  }
 }
