@@ -1552,19 +1552,19 @@ div {
       top: 143px;
       z-index: 100;
       &:hover {
-        background-color: #111;
+        background-color: #FFF;
       }                                
       &:active {
-        background-color: #111;
+        background-color: #FFF;
       }
     }
     .prev {
       left: 0;
-      background: rgba(0,0,0,0.5) url(../images/slide_nav.png) no-repeat 50% 0;      
+      background: #FFF url(../images/slide_nav.png) no-repeat 50% 0;      
     }
     .next {
       right: 0;
-      background: rgba(0,0,0,0.5) url(../images/slide_nav.png) no-repeat 50% 100%;      
+      background: #FFF url(../images/slide_nav.png) no-repeat 50% 100%;      
     }
     &:hover .prev,
     &:hover .next {
