@@ -1524,3 +1524,84 @@ div {
   background-color: #666;
   .foreground {
     background-color: #ddd; } }
+ 
+/* ---------- Slides ----------- */
+
+#featured {
+  .view-featured-product-slide- {
+    position: relative;
+    .view-content {
+      height: 350px;
+    }
+    .slide-title {
+      background-color: #FFF;
+      position: absolute;
+      padding: 10px 20px;
+      bottom: 32px;
+      left: 32px;
+      text-align: left;
+    } 
+    .prev,                                      
+    .next {
+      display: none;
+      width: 32px;
+      height: 0;
+      padding-top: 64px;
+      overflow: hidden;
+      position: absolute;
+      top: 143px;
+      z-index: 100;
+      &:hover {
+        background-color: #111;
+      }                                
+      &:active {
+        background-color: #111;
+      }
+    }
+    .prev {
+      left: 0;
+      background: rgba(0,0,0,0.5) url(../images/slide_nav.png) no-repeat 50% 0;      
+    }
+    .next {
+      right: 0;
+      background: rgba(0,0,0,0.5) url(../images/slide_nav.png) no-repeat 50% 100%;      
+    }
+    &:hover .prev,
+    &:hover .next {
+      display: block;
+    }
+  }
+}
+
+.pagination {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  text-align:center;
+  float: left;
+  position: absolute;
+  bottom: -40px;
+  z-index: 1000;
+  width: 100%;
+}
+
+.pagination li {
+  display: inline;
+  margin: 6px;
+  height: 12px;
+}
+
+.pagination li a {
+  display: inline-block;
+  margin: 0;       
+  width: 12px;
+  height: 0;
+  padding-top: 12px;
+  background-image:url(../images/pagination.png);
+	background-position: 0 0;
+  overflow: hidden;
+}
+
+.pagination li.current a {
+  background-position: 0 -12px;
+}
