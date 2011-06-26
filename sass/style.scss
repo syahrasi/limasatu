@@ -487,7 +487,7 @@ h1#site-name {
   margin-bottom: 40px; }
 
 .featured #main {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /* ----------------- Featured ----------------- */
@@ -1615,7 +1615,47 @@ div {
 
 .jcarousel-container {
   margin: 0 25px 20px;
+  height: 117px;
+  position: relative;
+  .jcarousel-clip {
+    overflow: hidden;
+  }
   .jcarousel-item {
     margin: 5px;
+    float: left;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .jcarousel-prev,
+  .jcarousel-next {
+    width: 32px;
+    height: 0;
+    padding-top: 64px;
+    top: 24px;
+    position: absolute;
+    cursor: pointer;    
+    z-index: 100;
+    &:hover {
+      //background-color: lighten($accent, 5);
+    }                                
+    &:active {
+      //background-color: darken($accent, 5);
+    }
+  }
+  .jcarousel-prev {
+    left: -32px;
+    background: #FFF url(../images/slide_nav.png) no-repeat 50% 0;      
+  }
+  .jcarousel-next {
+    right: -32px;
+    background: #FFF url(../images/slide_nav.png) no-repeat 50% 100%;      
+  }                    
+  .jcarousel-prev-disabled,
+  .jcarousel-prev-disabled:hover, 
+  .jcarousel-next-disabled,
+  .jcarousel-next-disabled:hover {
+    cursor: default;
   }
 }
