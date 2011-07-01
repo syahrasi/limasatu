@@ -1714,3 +1714,25 @@ div {
     }
   } 
 }
+
+
+/* ---------- Testimonial ----------- */
+
+#content {
+  .testimonial-title {
+    margin: 0 0 40px;
+  }
+}
+.block {
+  .testimonial-body {
+    font-style: italic;
+    background: transparent url('../images/quote.gif') no-repeat 0 0;
+    padding-left: 20px;
+  }
+  .testimonial-title {
+    text-align: right;
+    &:before {
+      content: "\2014 ";
+    }
+  }
+}
