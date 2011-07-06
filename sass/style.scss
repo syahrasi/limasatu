@@ -1736,3 +1736,46 @@ div {
     }
   }
 }
+
+/* ---------- Product Node ----------- */
+
+.field-slideshow-wrapper {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.field-slideshow-slide {
+  img {
+    margin-bottom: 2px;
+  }
+}
+
+.group_product_info {
+  border: 1px solid #d6d6d6;
+  margin: 0 0 20px 20px;
+  padding: 20px;
+  width: 200px;
+  float: right;
+}
+
+.field-slideshow-caption {
+  padding: 0 0 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #d6d6d6;
+  .field-slideshow-caption-text {
+    font-size: 0.8em;
+  }
+}
+
+#field-slideshow-0-controls {
+  float: right;
+}
+
+#field-slideshow-0-pager {
+  float: left;
+  a {
+    float: left;
+    display: block;
+    margin-right: 5px;
+  }
+}
