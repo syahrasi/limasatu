@@ -1742,6 +1742,8 @@ div {
 .field-slideshow-wrapper {
   float: left;
   margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 5px;
 }
 
 .field-slideshow-slide {
@@ -1750,29 +1752,57 @@ div {
   }
 }
 
+.product-add-to-cart {
+  text-align: center;
+}
+
 .group_product_info {
   border: 1px solid #d6d6d6;
   margin: 0 0 20px 20px;
   padding: 20px;
   width: 200px;
   float: right;
+  .field-name-field-product {
+    form {
+      div {
+        text-align: center;
+        #edit-submit {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .field-name-commerce-price {
+    margin-bottom: 20px;
+  }
+  .field-name-commerce-stock {
+    margin-bottom: 20px;
+  } 
 }
 
 .field-slideshow-caption {
-  padding: 0 0 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid #d6d6d6;
+  //width: 690px;
+  background-color: rgba(255,255,255,0.9);
+  position: absolute;
+  bottom: 8px;
   .field-slideshow-caption-text {
     font-size: 0.8em;
+    padding: 10px;
+    display: block;
   }
 }
 
 #field-slideshow-0-controls {
   float: right;
+  font-size: 0.8em;
+  a {
+    padding-left: 5px;
+  }
 }
 
 #field-slideshow-0-pager {
   float: left;
+  font-size: 0.8em;
   a {
     float: left;
     display: block;
