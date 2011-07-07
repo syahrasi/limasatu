@@ -1744,15 +1744,22 @@ div {
 .field-slideshow-wrapper {
   float: left;
   margin-bottom: 20px;
-  position: relative;
   padding-bottom: 5px;
-}
-
-.field-slideshow-slide {
-  img {
-    margin-bottom: 2px;
+  .field-slideshow {
+    margin: 0;
+    padding: 0;
+    .field-slideshow-slide {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      img {
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
 }
+
 
 .product-add-to-cart {
   text-align: center;
@@ -1787,10 +1794,10 @@ div {
   //width: 690px;
   background-color: rgba(255,255,255,0.9);
   position: absolute;
-  bottom: 8px;
+  bottom: 0;
   .field-slideshow-caption-text {
     font-size: 0.8em;
-    padding: 10px;
+    padding: 10px 10px 16px;
     display: block;
   }
 }
