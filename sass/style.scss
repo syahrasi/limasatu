@@ -1709,8 +1709,10 @@ div {
       list-style: none;
       float: left;
       width: 220px;
-      height: 350px;
-      margin-right: 10px;
+      height: 300px;
+      margin: 0 10px 20px 0;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d6d6d6;
     }
   } 
 }
@@ -1772,12 +1774,13 @@ div {
       }
     }
   }
-  .field-name-commerce-price {
-    margin-bottom: 20px;
-  }
+  .field-name-taxonomy-catalog,
+  .field-name-commerce-price,
   .field-name-commerce-stock {
-    margin-bottom: 20px;
-  } 
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 10px;
+  }
 }
 
 .field-slideshow-caption {
