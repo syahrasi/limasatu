@@ -738,8 +738,10 @@ ul.links {
     border-bottom: 3px double #dfdfdf;
     padding-bottom: 5px; }
   .block {
+    float: left;
+    width: 100%;
     margin-bottom: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 0.5em;
     border-bottom: 1px solid #dfdfdf;
     //line-height: 1.3;
     &.last {
@@ -1817,5 +1819,41 @@ div {
     float: left;
     display: block;
     margin-right: 5px;
+  }
+}
+
+
+/* ---------- Custom Block ----------- */
+
+.recommended-product {
+  float: left;
+  li {
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    margin: 0 0 10px 0;
+    border-bottom: 1px dashed #dfdfdf;
+    img {
+      float: left;
+      margin: 0 10px 0 0;
+    }
+    .product-title {
+      overflow: hidden;
+      margin: 0;
+      span {
+        font-weight: bold;
+        display: block;
+      }
+    }
+    &.last {
+      border: none;
+    }
+  }
+}
+
+.latest-news {
+  li {
+    border-bottom: 1px dashed #dfdfdf;
+    padding: 5px 0;
   }
 }
