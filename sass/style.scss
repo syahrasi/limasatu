@@ -1700,6 +1700,31 @@ div {
 }
 
 
+/* ---------- News ----------- */
+
+.page-news {
+  .news-item {
+    float: left;
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    li {
+      border-bottom: 1px solid #d6d6d6;
+      float: left;
+      padding: 20px 0;
+      img {
+        float: left;
+        margin-right: 20px;
+      }
+      .news-title {
+        margin-top: 0;
+      }
+      .news-content {
+        overflow: hidden;
+      }
+    }
+  }
+}
 
 /* ---------- Products Grid ----------- */
 
