@@ -1854,35 +1854,43 @@ div {
 
 /* ---------- Custom Block ----------- */
 
-.recommended-product {
-  float: left;
-  li {
-    float: left;
-    width: 100%;
-    padding-bottom: 10px;
-    margin: 0 0 10px 0;
-    border-bottom: 1px dashed #dfdfdf;
-    img {
-      float: left;
-      margin: 0 10px 0 0;
-    }
-    .product-title {
+.block {
+  .related-product,
+  .recommended-product {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      width: 100%;
+      padding-bottom: 10px;
+      margin: 0 0 10px 0;
+      border-bottom: 1px dashed #dfdfdf;
       overflow: hidden;
-      margin: 0;
-      span {
-        font-weight: bold;
-        display: block;
+      img {
+        float: left;
+        margin: 0 10px 0 0;
       }
-    }
-    &.last {
-      border: none;
+      .product-title {
+        overflow: hidden;
+        margin: 0;
+        span {
+          font-weight: bold;
+          display: block;
+        }
+      }
+      &.last {
+        border: none;
+      }
     }
   }
 }
 
-.latest-news {
-  li {
-    border-bottom: 1px dashed #dfdfdf;
-    padding: 5px 0;
+#triptych {
+  #block-comment-recent,
+  .latest-news {
+    li {
+      border-bottom: 1px dashed #dfdfdf;
+      padding: 5px 0;
+    }
   }
 }
