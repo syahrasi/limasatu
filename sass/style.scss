@@ -441,27 +441,28 @@ h1#site-name {
   width: 960px; }
 
 #main-menu-links {
-  a {
-    color: #d9d9d9;
-    padding: 0.6em 1em 0.4em; }
+  text-align: center;
   background-color: #111111;
   font-size: 0.929em;
   margin: 0;
   padding: 0 15px;
+  a {
+    color: #d9d9d9;
+    padding: 0.6em 1em 0.4em; }
   li {
-    float: left;
     /* LTR */
     list-style: none;
     padding: 0 1px;
+    display: inline;
     margin: 0 1px; }
   a {
     color: #ffffff;
-    float: left;
     /* LTR */
     height: 3.2em;
     line-height: 3.2em;
     padding: 0 0.8em;
     text-decoration: none;
+    display: inline-block;
     &:hover, &:focus, &:active {} }
   li a.active {
     border-bottom: none; } }
