@@ -510,7 +510,7 @@ h1#site-name {
   p {
     margin: 0;
     padding: 0; } }
-
+                                                              
 /* --------------- Highlighted ---------------- */
 
 #highlighted {
@@ -539,7 +539,11 @@ h1#page-title {
   line-height: 1.4; }
 
 .node .content {
-  font-size: 1.071em; }
+  font-size: 1.071em; 
+  p img {
+    margin: 10px 0;
+  }
+}
 
 .node-teaser {
   .content {
