@@ -499,8 +499,9 @@ h1#site-name {
   line-height: 1.4;
   padding: 20px 0 45px;
   margin: 0;
-  background: #f0f0f0;
-  background: rgba(30, 50, 10, 0.08);
+  background: #FFF;
+  //background: #f0f0f0;
+  //background: rgba(30, 50, 10, 0.08);
   border-bottom: 1px solid #e7e7e7;
   text-shadow: 1px 1px #fff;
   h2 {
@@ -1874,7 +1875,7 @@ div {
         overflow: hidden;
         margin: 0;
         span {
-          font-weight: bold;
+          font-weight: bold;                                       
           display: block;
         }
       }
@@ -1899,3 +1900,5 @@ div {
     }
   }
 }
+
+

@@ -46,7 +46,40 @@ a {
 #name-and-slogan {
   color: #fffeff;
   a {
-    color: #fffeff; } }
+    color: #fffeff; }
+  }
 
 #secondary-menu-links li a {
   color: #fffeff; }
+
+/* ---------- Colors Override ----------- */
+
+$lightbrown: #EDE9DA;
+$darkerlightbrown: #DBD6C4;
+$darkbrown: #42403b;
+
+#header, #triptych-wrapper {
+  background-color: $lightbrown;
+} 
+
+#main-menu-links, #footer-wrapper {
+  background-color: $darkbrown;
+}
+
+.featured #messages {
+  background-color: #FFF;
+}
+
+#triptych h2 {
+  border-color: $darkerlightbrown;
+}
+
+#triptych #block-comment-recent li, 
+#triptych .latest-news li,
+#triptych .block {
+  border-color: $darkerlightbrown;                            
+}
+
+#triptych-wrapper {
+  border-color: $darkerlightbrown;
+}
