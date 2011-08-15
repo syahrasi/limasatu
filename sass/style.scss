@@ -1884,13 +1884,18 @@ div {
     }
   }
 }
-
+                        
 #triptych {
   #block-comment-recent,
   .latest-news {
     li {
       border-bottom: 1px dashed #dfdfdf;
       padding: 5px 0;
+    }
+  }
+  #block-comment-recent {
+    li span {
+      display: block;
     }
   }
 }
