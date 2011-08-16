@@ -294,11 +294,12 @@ ul.tips {
     {
       outline: 0; } } }
 
-#logo {
+#logo
+{
   display: block;
   width: 498px;
   margin: 0 auto 0;
-  padding: 60px 0; }
+  padding: 70px 0 60px; }
 
 #name-and-slogan {
   float: left;
@@ -430,6 +431,11 @@ h1#site-name {
   .block-locale ul li {
     display: inline;
     padding: 0 0.5em; } }
+
+#header {
+  background: $lightbrown url(../images/noise-dark.png) repeat-x 0 -160px;
+}
+
 
 /* Region header block menus. */
 
