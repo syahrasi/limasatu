@@ -1,6 +1,8 @@
 name = Lima Satu
 description = Theme for limasatu.com, based on bartik theme
 base theme = bartik
+version = VERSION
+core = 7.x
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/colors.css
