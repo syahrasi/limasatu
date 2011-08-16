@@ -1,3 +1,7 @@
+$lightbrown: #EDE9DA;
+$darkerlightbrown: #DBD6C4;
+$darkbrown: #42403b;   
+
 /* ---------- Overall Specifications ---------- */
 
 body {
@@ -284,14 +288,15 @@ ul.tips {
       -webkit-border-bottom-left-radius: 10px;
       -webkit-border-bottom-right-radius: 10px;
       border-radius: 0 0 10px 10px; }
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus
+    {
       outline: 0; } } }
 
 #logo {
   display: block;
   width: 498px;
   margin: 0 auto 0;
-  padding: 40px 0; }
+  padding: 40px 0 60px; }
 
 #name-and-slogan {
   float: left;
@@ -434,15 +439,17 @@ h1#site-name {
 
 /* --------------- Main Menu ------------ */
 
+
 #main-menu {
   clear: both;
   position: absolute;
-  bottom: -20px;
+  bottom: -8px;
   width: 960px; }
 
 #main-menu-links {
   text-align: center;
-  background-color: #111111;
+  //background-color: #111111;
+  font-weight: bold;
   font-size: 0.929em;
   margin: 0;
   padding: 0 15px;
@@ -456,19 +463,69 @@ h1#site-name {
     display: inline;
     margin: 0 1px; }
   a {
-    color: #ffffff;
+    color: $darkerlightbrown;
     /* LTR */
     height: 3.2em;
     line-height: 3.2em;
     padding: 0 0.8em;
     text-decoration: none;
     display: inline-block;
-    &:hover, &:focus, &:active {} }
+    &:hover, &:focus, &:active {
+      color: #FFF;
+    } }
   li a.active {
     border-bottom: none; } }
 
 .featured #main-menu-links li a {
   &:active, &.active {} }
+
+/* ribbon style */
+
+
+#main-menu {
+  z-index: 0;
+}
+
+#main-menu:before, 
+#main-menu:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid darken($darkbrown, 10%);
+  z-index: -2;
+}
+
+#main-menu:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+#main-menu:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+#main-menu-links:before,
+#main-menu-links:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #111 transparent transparent transparent;
+  bottom: -1em;
+}
+
+#main-menu-links:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+#main-menu-links:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+  z-index: 9999;
+}
 
 /* --------------- Secondary Menu ------------ */
 
