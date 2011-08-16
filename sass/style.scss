@@ -796,13 +796,28 @@ ul.links {
 
 #triptych {
   h2 {
-    color: #000;
-    font-size: 1.714em;
+    color: #FFF;
+    font-size: 1em;
     margin-bottom: 0.8em;
-    text-shadow: 0 1px 0 #fff;
-    line-height: 1;
-    border-bottom: 3px double #dfdfdf;
-    padding-bottom: 10px; }
+    @include single-text-shadow(#111, 0, 1px, 1px);
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    //border-bottom: 3px double #dfdfdf;
+    position: relative;
+    z-index: 0;
+  &:before {
+    content: "";
+    border-width: 20px 10px;
+    border-color: $darkbrown transparent;
+    border-style: solid;
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }}
   .block {
     float: left;
     width: 100%;
