@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 $lightbrown: #EDE9DA;
 $darkerlightbrown: #DBD6C4;
 $darkbrown: #42403b;   
@@ -472,6 +474,7 @@ h1#site-name {
     display: inline-block;
     &:hover, &:focus, &:active {
       color: #FFF;
+      @include single-text-shadow(#111, 0, 1px, 1px);
     } }
   li a.active {
     border-bottom: none; } }
@@ -870,6 +873,8 @@ ul.links {
     border-color: rgba(255, 255, 255, 0.15);
     font-size: 1em;
     margin-bottom: 0;
+    color: $lightbrown;
+    @include single-text-shadow(#111, 0, 1px, 1px);
     padding-bottom: 3px;
     text-transform: uppercase; }
   .content {
