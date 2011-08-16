@@ -9,8 +9,6 @@ stylesheets[all][] = css/colors.css
 
 scripts[] = js/limasatu.js
 
-regions[topbar_left] = Top bar left
-regions[topbar_right] = Top bar right
 regions[header] = Header
 regions[help] = Help
 regions[page_top] = Page top
