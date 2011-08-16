@@ -298,7 +298,7 @@ ul.tips {
   display: block;
   width: 498px;
   margin: 0 auto 0;
-  padding: 40px 0 60px; }
+  padding: 60px 0; }
 
 #name-and-slogan {
   float: left;
@@ -529,7 +529,7 @@ h1#site-name {
   border-width: 1em 1em 0 0;
   z-index: 9999;
 }
-
+                                                                                              
 /* --------------- Secondary Menu ------------ */
 
 #secondary-menu-links {
@@ -538,6 +538,7 @@ h1#site-name {
   font-size: 0.929em;
   margin: 10px 10px 0;
   a {
+    @include single-text-shadow(rgba(0,0,0, 0.3), 0, 1px, 1px);
     &:hover, &:focus {
       text-decoration: underline; } } }
 

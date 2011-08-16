@@ -1,3 +1,7 @@
+$lightbrown: #EDE9DA;
+$darkerlightbrown: #DBD6C4;
+$darkbrown: #42403b; 
+
 /* ---------- Color Module Styles ----------- */
 
 body {
@@ -54,9 +58,8 @@ a {
 
 /* ---------- Colors Override ----------- */
 
-$lightbrown: #EDE9DA;
-$darkerlightbrown: #DBD6C4;
-$darkbrown: #42403b;
+#secondary-menu-links li a {
+  color: $darkbrown; }  
 
 #header, #triptych-wrapper {
   background-color: $lightbrown;
